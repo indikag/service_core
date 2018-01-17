@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 19, 2017, 8:46:31 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.service.core.entity.VehicleType" table="VEHICLETYPE">
+        <id name="vehicleTypeId" type="int" access="field">
+            <column name="VEHICLETYPEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="vehicleType" type="java.lang.String" access="field">
+            <column name="VEHICLETYPE" />
+        </property>
+        <many-to-one name="provider" class="com.service.core.entity.ServiceProvider" access="field" fetch="join">
+            <column name="PROVIDER" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

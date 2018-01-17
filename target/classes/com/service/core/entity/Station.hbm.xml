@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 19, 2017, 8:46:31 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.service.core.entity.Station" table="STATION">
+        <id name="stationId" type="int" access="field">
+            <column name="STATIONID" />
+            <generator class="assigned" />
+        </id>
+        <property name="stationName" type="java.lang.String" access="field">
+            <column name="STATIONNAME" />
+        </property>
+        <property name="stationAddress" type="java.lang.String" access="field">
+            <column name="STATIONADDRESS" />
+        </property>
+        <property name="longitude" type="double" access="field">
+            <column name="LONGITUDE" />
+        </property>
+        <property name="latitude" type="double" access="field">
+            <column name="LATITUDE" />
+        </property>
+        <property name="contactNo" type="java.lang.String" access="field">
+            <column name="CONTACTNO" />
+        </property>
+        <many-to-one name="provider" class="com.service.core.entity.ServiceProvider" access="field" fetch="join">
+            <column name="PROVIDER" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

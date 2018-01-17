@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 19, 2017, 8:46:31 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.service.core.entity.ServiceProvider" table="SERVICEPROVIDER">
+        <id name="serviceProviderId" type="java.lang.Long" access="field">
+            <column name="SERVICEPROVIDERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="serviceProviderName" type="java.lang.String" access="field">
+            <column name="SERVICEPROVIDERNAME" />
+        </property>
+        <property name="registeredDate" type="java.util.Date" access="field">
+            <column name="REGISTEREDDATE" />
+        </property>
+        <property name="isActive" type="boolean" access="field">
+            <column name="ISACTIVE" />
+        </property>
+    </class>
+</hibernate-mapping>
