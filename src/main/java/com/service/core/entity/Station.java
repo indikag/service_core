@@ -34,4 +34,61 @@ public class Station {
 	
 	@ManyToOne(targetEntity = ServiceProvider.class)
 	private long serviceProviderId;
+
+	public long getStationId() {
+		return stationId;
+	}
+
+	public void setStationId(long stationId) {
+		this.stationId = stationId;
+	}
+
+	public String getStationName() {
+		return stationName;
+	}
+
+	public void setStationName(String stationName) {
+		this.stationName = stationName;
+	}
+
+	public String getStationAddress() {
+		return stationAddress;
+	}
+
+	public void setStationAddress(String stationAddress) {
+		this.stationAddress = stationAddress;
+	}
+
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getContactNo() {
+		return contactNo;
+	}
+
+	public void setContactNo(String contactNo) {
+		this.contactNo = contactNo;
+	}
+
+	public long getServiceProviderId() {
+		return serviceProviderId;
+	}
+
+	public void setServiceProviderId(long serviceProviderId) {
+		this.serviceProviderId = serviceProviderId;
+	}
+	
 }

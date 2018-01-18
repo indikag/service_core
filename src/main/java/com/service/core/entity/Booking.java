@@ -42,6 +42,4 @@ public class Booking {
 	public void setServiceLineId(long serviceLineId) {
 		this.serviceLineId = serviceLineId;
 	}
-	
-	
 }

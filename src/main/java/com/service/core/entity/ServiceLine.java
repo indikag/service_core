@@ -19,4 +19,28 @@ public class ServiceLine {
 	
 	@ManyToOne(targetEntity = Station.class)
 	private long stationId;
+
+	public long getServiceLineId() {
+		return serviceLineId;
+	}
+
+	public void setServiceLineId(long serviceLineId) {
+		this.serviceLineId = serviceLineId;
+	}
+
+	public long getServiceTypeId() {
+		return serviceTypeId;
+	}
+
+	public void setServiceTypeId(long serviceTypeId) {
+		this.serviceTypeId = serviceTypeId;
+	}
+
+	public long getStationId() {
+		return stationId;
+	}
+
+	public void setStationId(long stationId) {
+		this.stationId = stationId;
+	}
 }

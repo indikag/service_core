@@ -25,4 +25,38 @@ public class ServiceProvider {
 	
 	@Column(name = "isActive")
 	private boolean isActive;
+
+	public long getServiceProviderId() {
+		return serviceProviderId;
+	}
+
+	public void setServiceProviderId(long serviceProviderId) {
+		this.serviceProviderId = serviceProviderId;
+	}
+
+	public String getServiceProviderName() {
+		return serviceProviderName;
+	}
+
+	public void setServiceProviderName(String serviceProviderName) {
+		this.serviceProviderName = serviceProviderName;
+	}
+
+	public Date getRegisteredDate() {
+		return registeredDate;
+	}
+
+	public void setRegisteredDate(Date registeredDate) {
+		this.registeredDate = registeredDate;
+	}
+
+	public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
+	
+	
 }

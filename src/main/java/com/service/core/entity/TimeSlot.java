@@ -28,4 +28,37 @@ public class TimeSlot {
 	@ManyToOne
 	@JoinColumn(name = "serviceLineId")
 	private ServiceLine serviceLine;
+
+	public long getSlotId() {
+		return slotId;
+	}
+
+	public void setSlotId(long slotId) {
+		this.slotId = slotId;
+	}
+
+	public Date getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
+	}
+
+	public Date getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
+
+	public ServiceLine getServiceLine() {
+		return serviceLine;
+	}
+
+	public void setServiceLine(ServiceLine serviceLine) {
+		this.serviceLine = serviceLine;
+	}
+	
 }

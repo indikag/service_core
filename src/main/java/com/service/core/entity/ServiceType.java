@@ -32,4 +32,45 @@ public class ServiceType {
 	
 	@ManyToOne(targetEntity = ServiceProvider.class)
 	private long serviceProviderId;
+
+	public long getServiceTypeId() {
+		return serviceTypeId;
+	}
+
+	public void setServiceTypeId(long serviceTypeId) {
+		this.serviceTypeId = serviceTypeId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public int getServiceTimeInMinutes() {
+		return serviceTimeInMinutes;
+	}
+
+	public void setServiceTimeInMinutes(int serviceTimeInMinutes) {
+		this.serviceTimeInMinutes = serviceTimeInMinutes;
+	}
+
+	public long getServiceProviderId() {
+		return serviceProviderId;
+	}
+
+	public void setServiceProviderId(long serviceProviderId) {
+		this.serviceProviderId = serviceProviderId;
+	}
+	
 }

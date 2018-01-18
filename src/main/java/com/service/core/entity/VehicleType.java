@@ -29,4 +29,29 @@ public class VehicleType {
 	@ManyToOne
 	@JoinColumn(name = "serviceProviderId")
 	private ServiceProvider provider;
+
+	public long getVehicleTypeId() {
+		return vehicleTypeId;
+	}
+
+	public void setVehicleTypeId(long vehicleTypeId) {
+		this.vehicleTypeId = vehicleTypeId;
+	}
+
+	public String getVehicleType() {
+		return vehicleType;
+	}
+
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
+	}
+
+	public ServiceProvider getProvider() {
+		return provider;
+	}
+
+	public void setProvider(ServiceProvider provider) {
+		this.provider = provider;
+	}
+	
 }
